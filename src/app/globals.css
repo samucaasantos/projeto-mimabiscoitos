@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: var(--font-eb-garamond), 'EB Garamond', Georgia, serif;
+  --font-sans: var(--font-be-vietnam-pro), 'Be Vietnam Pro', system-ui, sans-serif;
+
+  --color-petal-pink: #fae4ec;
+  --color-berry-glaze: #840d0f;
+  --color-flour-white: #ffffff;
+  --color-primary: #5e0004;
+  --color-primary-container: #840d0f;
+  --color-on-primary: #ffffff;
+  --color-on-surface: #241919;
+  --color-on-surface-variant: #59413e;
+  --color-surface: #fff8f7;
+  --color-surface-bright: #fff8f7;
+  --color-surface-container: #ffe9e8;
+  --color-surface-container-high: #f9e3e3;
+  --color-surface-container-highest: #f3dedd;
+  --color-surface-container-low: #fff0f0;
+  --color-secondary: #90494c;
+  --color-secondary-container: #fda3a6;
+  --color-warm-dust: #b8696c;
+  --color-outline-variant: #e0bfbb;
+
+  /* Custom Spacing tokens from design */
+  --spacing-unit: 8px;
+  --spacing-gutter: 16px;
+  --spacing-stack-sm: 8px;
+  --spacing-stack-md: 24px;
+  --spacing-stack-lg: 48px;
+  --spacing-container-padding: 24px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #fae4ec;
+    color: #241919;
+    font-family: var(--font-be-vietnam-pro), 'Be Vietnam Pro', system-ui, sans-serif;
+  }
+}
+
+/* Custom typography utility mappings to mirror design system */
+.font-headline-xl {
+  font-family: var(--font-eb-garamond), 'EB Garamond', Georgia, serif;
+  font-size: 3.5rem;
+  line-height: 1.15;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 768px) {
+  .font-headline-xl {
+    font-size: 2.25rem;
+    line-height: 1.25;
+  }
+}
+
+.font-headline-lg {
+  font-family: var(--font-eb-garamond), 'EB Garamond', Georgia, serif;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .font-headline-lg {
+    font-size: 2rem;
+    line-height: 1.25;
+  }
+}
+
+.font-headline-md {
+  font-family: var(--font-eb-garamond), 'EB Garamond', Georgia, serif;
+  font-size: 2rem;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.font-headline-sm {
+  font-family: var(--font-eb-garamond), 'EB Garamond', Georgia, serif;
+  font-size: 1.5rem;
+  line-height: 1.33;
+  font-weight: 600;
+}
+
+.font-body-lg {
+  font-family: var(--font-be-vietnam-pro), 'Be Vietnam Pro', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.55;
+  font-weight: 400;
+}
+
+.font-body-md {
+  font-family: var(--font-be-vietnam-pro), 'Be Vietnam Pro', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.font-label-md {
+  font-family: var(--font-be-vietnam-pro), 'Be Vietnam Pro', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+.card-shadow {
+  box-shadow: 0 10px 25px -5px rgba(132, 13, 15, 0.1), 0 8px 10px -6px rgba(132, 13, 15, 0.1);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
