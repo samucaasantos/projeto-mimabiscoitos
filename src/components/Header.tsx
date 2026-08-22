@@ -16,7 +16,7 @@ export default function Header() {
     <header className="w-full sticky top-0 z-50 bg-petal-pink/95 backdrop-blur-md border-b border-warm-dust/10 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
         {/* Brand Logo */}
-        <Link href="#" className="flex items-center gap-3 group">
+        <Link href="#inicio" aria-label="Mima Biscoitos - Página Inicial" className="flex items-center gap-3 group">
           <div className="relative w-10 h-10 overflow-hidden rounded-full border border-berry-glaze/30 bg-flour-white p-0.5 group-hover:scale-105 transition-transform duration-300">
             <Image
               src="/MIMA-1.svg"
@@ -36,7 +36,7 @@ export default function Header() {
           className="hidden md:flex items-center gap-8 font-label-md"
         >
           <a
-            href="#"
+            href="#inicio"
             className="relative text-on-surface-variant hover:text-berry-glaze transition-colors py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-berry-glaze hover:after:w-full after:transition-all after:duration-300"
           >
             Início
@@ -87,6 +87,8 @@ export default function Header() {
           </a>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-navigation"
             aria-label={mobileMenuOpen ? "Fechar Menu" : "Abrir Menu"}
             className="text-berry-glaze p-2 rounded-lg hover:bg-berry-glaze/10 transition-colors"
           >
@@ -102,9 +104,9 @@ export default function Header() {
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-surface border-b border-warm-dust/20 px-6 py-4 shadow-lg animate-in slide-in-from-top-2 duration-200">
-          <nav className="flex flex-col gap-4 font-label-md">
+          <nav id="mobile-navigation" aria-label="Navegação Mobile" className="flex flex-col gap-4 font-label-md">
             <a
-              href="#"
+              href="#inicio"
               onClick={() => setMobileMenuOpen(false)}
               className="text-berry-glaze font-bold text-lg py-1 border-b border-warm-dust/10"
             >

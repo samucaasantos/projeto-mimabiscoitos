@@ -45,7 +45,7 @@ export default function Footer() {
         <div className="flex flex-col gap-3 font-label-md text-sm">
           <h3 className="font-bold text-berry-glaze text-base mb-1">Navegação</h3>
           <a
-            href="#"
+            href="#inicio"
             className="text-on-surface-variant hover:text-berry-glaze transition-colors"
           >
             Início

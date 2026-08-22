@@ -22,7 +22,7 @@ export default function CtaSection() {
         </h2>
 
         <p className="font-body-lg text-flour-white/90 text-base sm:text-lg md:text-xl max-w-xl leading-relaxed">
-          Nossas fornadas são limitadas para garantir o máximo frescor e qualidade impecável. Garanta a sua caixa especial hoje mesmo.
+          Nossas fornadas são limitadas para garantir o máximo frescor e qualidade impecável. Garanta o seu pacote especial hoje mesmo.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center gap-4 pt-2 w-full sm:w-auto">

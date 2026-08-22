@@ -7,7 +7,7 @@ const INSTAGRAM_PROFILE = "https://www.instagram.com/biscoitosmima/";
 
 export default function Hero() {
   return (
-    <section className="relative w-full max-w-7xl mx-auto px-6 py-12 md:py-20 flex flex-col md:flex-row items-center gap-10 md:gap-16">
+    <section id="inicio" className="relative w-full max-w-7xl mx-auto px-6 py-12 md:py-20 flex flex-col md:flex-row items-center gap-10 md:gap-16">
       {/* Left Content */}
       <div className="flex-1 space-y-6 text-center md:text-left z-10">
         <div className="inline-flex items-center gap-2 bg-flour-white/80 border border-warm-dust/30 px-3.5 py-1.5 rounded-full shadow-sm text-xs md:text-sm font-label-md text-berry-glaze backdrop-blur-sm">
@@ -71,6 +71,7 @@ export default function Hero() {
             alt="Biscoitos artesanais Mima recém-assados na forma"
             fill
             priority
+            loading="eager"
             sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
           />
