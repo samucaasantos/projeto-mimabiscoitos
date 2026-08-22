@@ -55,7 +55,7 @@ export default function ProductsSection() {
               Nossa estrela exclusiva: um biscoito amanteigado doce, incrivelmente leve e crocante, coberto parcialmente com chocolate nobre selecionado. Cada mordida traz o contraste perfeito entre o derreter da massa amanteigada e o sabor aveludado do chocolate.
             </p>
 
-            <div className="grid grid-cols-2 gap-3 mb-8 text-xs sm:text-sm font-label-md text-berry-glaze">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 mb-8 text-xs sm:text-sm font-label-md text-berry-glaze">
               <div className="flex items-center gap-2 bg-petal-pink/60 p-2.5 rounded-lg border border-warm-dust/20">
                 <Heart className="w-4 h-4 shrink-0" />
                 <span>Manteiga Pura</span>
@@ -131,7 +131,7 @@ export default function ProductsSection() {
             <div>
               <div className="w-full h-64 relative overflow-hidden">
                 <Image
-                  src="/biscoito_na_forma.jpg"
+                  src="/biscoito_fornada.jpg"
                   alt="Fornada de biscoitos amanteigados Mima na forma"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
